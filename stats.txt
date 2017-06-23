@@ -1,0 +1,625 @@
+
+Red: AI White: AI
+Red: 45 White: 55
+
+Red: AI White: AI
+Red: 49 White: 51
+
+Red: AI White: AI
+Red: 50 White: 50
+
+Red: AI White: Random
+Red: 96 White: 4
+
+Red: AI White: Random
+Red: 99 White: 1
+
+Red: AI White: Random
+Red: 97 White: 3
+
+Red: Random White: Random
+Red: 48 White: 52
+
+Red: Random White: Random
+Red: 49 White: 51
+
+Red: Random White: Random
+Red: 52 White: 48
+
+
+Red: Harvey(+endpos) White: Random
+Red: 83 White: 17
+
+Red: Harvey(+endpos) White: Random
+Red: 80 White: 20
+
+Red: Harvey(+endpos) White: AI
+Red: 8 White: 92
+
+Red: Harvey(+endpos) White: AI
+Red: 7 White: 93
+
+Red: Harvey(+endpos) White: AI
+Red: 6 White: 94
+
+Removed endPos for obvious negative effect on Harvey
+
+
+Red: Harvey(+protect) White: AI
+Red: 52 White: 48
+
+Red: Harvey(+protect) White: AI
+Red: 54 White: 46
+
+Red: Harvey(+protect) White: AI
+Red: 58 White: 42
+
+Red: Harvey(+protect) White: Random
+Red: 97 White: 3
+
+Red: Harvey(+protect) White: Random
+Red: 100 White: 0
+
+Red: Harvey(+protect) White: Random
+Red: 100 White: 0
+
+Protect seems to have a positive effect, increase sample size
+
+
+Red: Harvey(+protect) White: Random
+Red: 970 White: 30
+
+Red: Harvey(+protect) White: AI
+Red: 597 White: 403
+
+Red: Harvey(+protect) White: AI
+Red: 581 White: 419
+
+Protect continues to have noticeable positive effect, will keep it. Reversing thing that had negative effect might produce positive effect?
+
+Red: Harvey(+protect+reverse) White: Random
+Red: 99 White: 1
+
+Red: Harvey(+protect+reverse) White: Random
+Red: 99 White: 1
+
+Red: Harvey(+protect+reverse) White: Random
+Red: 97 White: 3
+
+Red: Harvey(+protect+reverse) White: AI
+Red: 48 White: 52
+
+Red: Harvey(+protect+reverse) White: AI
+Red: 46 White: 54
+
+Red: Harvey(+protect+reverse) White: AI
+Red: 64 White: 36
+
+Unclear in differences with AI, will increase sample size
+
+Red: Harvey(+protect+reverse) White: AI
+Red: 447 White: 553
+
+Red: Harvey(+protect+reverse) White: AI
+Red: 4641 White: 5359
+
+Reverse is not having a positive effect, am removing from Harvey
+Harvey = Harvey + protect
+
+Jackson uses Harveys getScore and his own recursive looking forward method
+
+
+Red: Jackson White: AI
+Red: 0 White: 1
+
+Red: Jackson White: AI
+Red: 1 White: 0
+
+Red: Jackson White: AI
+Red: 0 White: 1
+
+Red: Jackson White: AI
+Red: 65 White: 35
+
+Red: Jackson White: AI
+Red: 596 White: 404
+
+Red: Jackson White: AI
+Red: 5994 White: 4006
+
+Greater than
+
+Red: AI White: AI
+Red: 481 White: 519
+
+Greater than/equal to
+Red: AI White: AI
+Red: 473 White: 527
+
+Gthan
+
+Red: AI White: Harvey
+Red: 441 White: 559
+
+G=(AI) G(Harvey)
+
+
+Red: AI White: Harvey
+Red: 180 White: 820
+
+Red: Harvey White: AI
+Red: 793 White: 207
+
+Red: Harvey White: AI
+Red: 775 White: 225
+
+
+
+Red: Jackson White: Random
+Red: 974 White: 26
+
+Red: Jackson White: Harvey
+Red: 5054 White: 4946
+
+Red: Harvey White: AI
+Red: 6061 White: 3939
+
+Red: Jackson White: Harvey
+Red: 5174 White: 4826
+
+Red: Jackson White: Harvey
+Red: 25153 White: 24847
+
+Red: Jackson White: AI
+Red: 5920 White: 4080
+
+Add diff to Jackson
+
+Red: Jackson White: AI
+Red: 453 White: 547
+
+Red: Jackson White: AI
+Red: 465 White: 535
+
+25 - diff Jackson
+
+Red: Jackson White: AI
+Red: 141 White: 859
+
+Red: Jackson White: AI
+Red: 138 White: 862
+
+remove int diff = Math.abs(move.getStart() - getColour().getHome()); (and 25 - diff) from Jackson
+
+Upped protect points
+
+Red: Jackson White: AI
+Red: 538 White: 462
+
+returned to norm
+
+Red: Jackson White: Jackson
+Red: 5000 White: 5000
+
+No colour bias!
+
+add safety
+
+Red: Jackson White: Random
+Red: 926 White: 74
+
+Red: Jackson White: AI
+Red: 306 White: 694
+
+Red: Jackson White: Harvey
+Red: 359 White: 641
+
+Safety makes Jackson worse, switch board[move.getEnd()].getNumCounters() >0 check around
+
+Red: Jackson White: Harvey
+Red: 593 White: 407
+
+Red: Jackson White: AI
+Red: 763 White: 237
+
+Jax is identical to Jackson, but has safety
+
+Red: Jackson White: Jax
+Red: 4520 White: 5480
+
+
+Red: Jackson White: Jax
+Red: 4435 White: 5565
+
+Red: Jackson White: Jax
+Red: 46 White: 54
+
+Red: Jackson White: Jax
+Red: 448 White: 552
+
+Red: Jackson White: Jax
+Red: 453 White: 549
+
+Adding safety to Jackson's main implementation
+Altering numbers in Jax, otherwise identical
+
+
+Red: Jax White: Random
+Red: 0 White: 1
+
+Red: Jax White: Random
+Red: 1 White: 4
+
+Red: Jax White: Random
+Red: 3 White: 7
+
+Red: Jax White: Random
+Red: 25 White: 75
+
+Remove safety
+
+Red: Jax White: Random
+Red: 97 White: 3
+
+Removing safety altogether from both Jax and Jackson
+
+Red: Jax White: Random
+Red: 98 White: 2
+
+Red: Jackson White: AI
+Red: 71 White: 29
+
+Red: Jackson White: AI
+Red: 6412 White: 3588
+
+Red: Jackson White: Harvey
+Red: 5106 White: 4894
+
+Red: Random White: Random
+Red: 5118 White: 4882
+
+Red: Random White: Random
+Red: 5110 White: 4890
+
+Red: AI White: AI
+Red: 0 White: 1
+
+Red: AI White: AI
+Red: 47 White: 53
+
+Red: AI White: AI
+Red: 499 White: 501
+
+Red: Jackson White: Jackson
+Red: 489 White: 511
+
+Red: Random White: Random
+Red: 524 White: 476
+
+switch who goes first
+
+WHITERandomREDRandom
+Red: 487 White: 513
+
+WHITE: RandomRED: Random
+Red: 470 White: 530
+
+WHITE: Random RED: Random
+Red: 520 White: 480
+
+RED: Random WHITE: Random
+Red: 519 White: 481
+
+RED: Jax WHITE: Random
+Red: 971 White: 29
+
+RED: AI WHITE: Jackson
+Red: 354 White: 646
+
+WHITE: AI RED: Jackson
+Red: 639 White: 361
+
+WHITE: Harvey RED: Jackson
+Red: 484 White: 516
+
+WHITE: Harvey RED: AI
+Red: 286 White: 714
+
+WHITE: Jackson RED: Harvey
+Red: 502 White: 498
+
+WHITE: Jackson RED: Harvey
+Red: 2460 White: 2540
+
+Add future board evaluation to Jax, remove future move (Jacksons thing)
+
+WHITE: Jax RED: Random
+Red: 238 White: 4762
+
+RED: Jax WHITE: AI
+Red: 4169 White: 831
+
+RED: Jax WHITE: Harvey
+Red: 3424 White: 1576
+
+RED: Harvey WHITE: Jax
+Red: 2557 White: 2443
+
+RED: Harvey WHITE: Jax
+Red: 497 White: 503
+
+RED: Jackson WHITE: Jax
+Red: 518 White: 482
+
+RED: Jax WHITE: Jackson
+Red: 706 White: 294
+
+WHITE: Jax RED: Jackson
+Red: 514 White: 486
+
+WHITE: Jackson RED: Jax
+Red: 668 White: 332
+
+RED: Jax WHITE: Jax
+Red: 6942 White: 3058
+
+WHITE: Jax RED: Jax
+Red: 6792 White: 3208
+
+WHITE: Jackson RED: Jackson
+Red: 478 White: 522
+
+WHITE: AI RED: AI
+Red: 5 White: 5
+
+WHITE: AI RED: AI
+Red: 35 White: 65
+
+WHITE: AI RED: AI
+Red: 458 White: 542
+
+RED: AI WHITE: AI
+Red: 42 White: 58
+
+WHITE: Jax RED: AI
+Red: 33 White: 67
+
+WHITE: Jax RED: AI
+Red: 348 White: 652
+
+WHITE: AI RED: Jax
+Red: 838 White: 162
+
+WHITE: AI RED: Jax
+Red: 824 White: 176
+
+WHITE: AI RED: Jackson
+Red: 650 White: 350
+
+WHITE: Jax RED: AI
+Red: 281 White: 719
+
+WHITE: Jax RED: AI
+Red: 291 White: 709
+
+RED: Jax WHITE: AI
+Red: 903 White: 97
+
+RED: AI WHITE: Jax
+Red: 308 White: 692
+
+Hopefully make AI better, and eliminate weird bias
+
+RED: AI WHITE: Random
+Red: 873 White: 127
+
+WHITE: AI RED: Random
+Red: 116 White: 884
+
+WHITE: AI RED: Jax
+Red: 842 White: 158
+
+WHITE: Jax RED: AI
+Red: 138 White: 862
+
+WHITE: AI RED: AI
+Red: 399 White: 601
+
+RED: AI WHITE: AI
+Red: 387 White: 613
+
+RED: Random WHITE: Random
+Red: 500 White: 500
+
+RED: Random WHITE: Random
+Red: 504 White: 496
+
+Also added random of top scores to jax
+
+RED: Jax WHITE: Random
+Red: 950 White: 50
+
+RED: Random WHITE: Jax
+Red: 49 White: 951
+
+RED: AI WHITE: Jax
+Red: 168 White: 832
+
+RED: Jax WHITE: AI
+Red: 821 White: 179
+
+RED: Harvey WHITE: Harvey
+Red: 515 White: 485
+
+RED: Harvey WHITE: Harvey
+Red: 514 White: 486
+
+RED: Harvey WHITE: Harvey
+Red: 5065 White: 4935
+
+RED: Jax WHITE: Jax
+Red: 5004 White: 4996
+
+WHITE: Jax RED: Jax
+Red: 4995 White: 5005
+
+WHITE: Harvey RED: Harvey
+Red: 4913 White: 5087
+
+RED: Harvey WHITE: Harvey
+Red: 5079 White: 4921
+
+RED: Harvey WHITE: Harvey
+Red: 5010 White: 4990
+
+RED: Harvey WHITE: Harvey
+Red: 5015 White: 4985
+
+RED: AI WHITE: AI
+Red: 3929 White: 6071
+
+WHITE: AI RED: AI
+Red: 3963 White: 6037
+
+Fixed AI?
+
+WHITE: AI RED: AI
+Red: 59 White: 41
+
+Fixed AI!
+
+RED: AI WHITE: AI
+Red: 45 White: 55
+
+RED: AI WHITE: AI
+Red: 490 White: 510
+
+RED: Harvey WHITE: Harvey
+Red: 503 White: 497
+
+RED: Random WHITE: Random
+Red: 518 White: 482
+
+RED: Random WHITE: Random
+Red: 484 White: 516
+
+RED: Harvey WHITE: Harvey
+Red: 492 White: 508
+
+RED: Harvey WHITE: Harvey
+Red: 480 White: 520
+
+RED: Harvey WHITE: Harvey
+Red: 5028 White: 4972
+
+RED: AI WHITE: AI
+Red: 513 White: 487
+
+RED: AI WHITE: AI
+Red: 500 White: 500
+
+Battle of the AIS
+
+RED: Harvey WHITE: AI
+Red: 766 White: 234
+
+RED: AI WHITE: Harvey
+Red: 217 White: 783
+
+RED: AI WHITE: Jackson
+Red: 212 White: 788
+
+RED: Jackson WHITE: AI
+Red: 772 White: 228
+
+RED: Jax WHITE: AI
+Red: 781 White: 219
+
+RED: AI WHITE: Jax
+Red: 252 White: 748
+
+RED: AI WHITE: Random
+Red: 905 White: 95
+
+RED: Random WHITE: AI
+Red: 84 White: 916
+
+RED: Random WHITE: Harvey
+Red: 35 White: 965
+
+RED: Harvey WHITE: Random
+Red: 951 White: 49
+
+RED: Harvey WHITE: Jackson
+Red: 526 White: 474
+
+RED: Jackson WHITE: Harvey
+Red: 451 White: 549
+
+RED: Jax WHITE: Harvey
+Red: 494 White: 506
+
+RED: Harvey WHITE: Jax
+Red: 515 White: 485
+
+RED: Jackson WHITE: Random
+Red: 949 White: 51
+
+RED: Random WHITE: Jackson
+Red: 62 White: 938
+
+RED: Jax WHITE: Jackson
+Red: 534 White: 466
+
+RED: Jackson WHITE: Jax
+Red: 456 White: 544
+
+RED: Jax WHITE: Jax
+Red: 495 White: 505
+
+RED: Jax WHITE: Random
+Red: 938 White: 62
+
+RED: Random WHITE: Jax
+Red: 50 White: 950
+
+Add future to Jax
+
+
+RED: Harvey WHITE: Jax
+Red: 489 White: 511
+
+RED: Harvey WHITE: Jax
+Red: 4918 White: 5082
+
+WHITE: Harvey RED: Jax
+Red: 4936 White: 5064
+
+WHITE: Harvey RED: Jax
+Red: 1 White: 0
+
+WHITE: Harvey RED: Jax
+Red: 520 White: 480
+
+When Jax gets Jacksons looking ahead
+
+WHITE: Harvey RED: Jax
+Red: 460 White: 540
+
+WHITE: Harvey RED: Jax
+Red: 475 White: 525
+
+Removed Jax's look ahead because it makes him lose
+
+WHITE: Harvey RED: Jax
+Red: 0 White: 1
+
+WHITE: Harvey RED: Jax
+Red: 0 White: 1
+
+WHITE: Harvey RED: Jax
+Red: 0 White: 1
+
+WHITE: Harvey RED: Jax
+Red: 0 White: 1
+
