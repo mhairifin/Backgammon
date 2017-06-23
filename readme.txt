@@ -1,5 +1,5 @@
 
-Practical 2 Backgammon
+Backgammon
 
 Contents:
 * Source Directory
