@@ -28,7 +28,6 @@ public class Comp extends Player{
         super(board, colour);
 
         int portNumber = 20101 + 30000;
-        //String host = "pc3-025-l.cs.st-andrews.ac.uk";
 
         try
         {
